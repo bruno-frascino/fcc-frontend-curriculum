@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" >
+  <title>The Green Survey Form</title>
+  <meta name="description" content="This page was created as part of the Free Code Camp Front End Curriculum training - It is a survey form about preserving the environment" >
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Bruno Frascino">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <h1 id="title">The Green Survey Form</h1>
+    <main id="main">
+      <p id="description">Let us know more about your eco-friendly habits and concerns.</p>
+      
+       <form id="survey-form" action="">
+        <div>
+          <div class="labels">
+            <label id="name-label" for="name">*Name:</label>
+          </div>
+          <div class="field">
+            <input  type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>
+        </div>
+         
+         <div>
+           <div class="labels" >
+             <label id="email-label" for="email">*Email:</label>
+           </div>
+           <div class="field">
+             <input  type="email" name="email" id="email" placeholder="Enter your email" required>
+           </div>
+         </div>
+         
+        <div>
+          <div class="labels">
+            <label id="number-label" for="age">*Age:</label>
+          </div>
+          <div class="field">
+            <input type="number" name="age" id="number" placeholder="Age" min="18" max="110" required>
+          </div>
+         </div>
+         
+         <div>
+          <div class="labels">
+            <label for="occupation">Which option best describes your current role?</label>
+          </div>
+          <div class="field">
+            
+            <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option  value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+         </div>
+        </div>
+         
+         <div>
+          <div class="labels" >
+            <label for="env-help">
+              How likely is that you would care for the environment?
+            </label>
+           </div>
+           <div class="field">
+             <ul class="ul-radio">
+              <li>
+               <label for="help-def" class="radio-opt">
+                <input id="help-def" name="env-help" type="radio" value="definitely">Definitely
+                </label>
+               </li>
+             <li>
+               <label for="help-may">
+             <input type="radio" id="help-may" name="env-help" value="maybe">Maybe
+               </label>
+               </li>
+              <li>
+               <label for="help-not">
+             <input type="radio" id="help-not" name="env-help" value="notsure">Not Sure
+                </label>
+               </li>
+             </ul>
+           </div>
+         </div>
+           
+        <div>
+          <div class="labels">
+            <label for="most-nature">What do you like most from nature:</label> 
+          </div>
+          <div class="field">
+            <select id="most-drop" name="most-nature" class="dropdown">
+            <option disabled selected value>Select an option</option>
+            <option value="Water">Fresh Water</option>
+            <option value="Air">Clean Air</option>
+            <option value="Ocean">Clean Oceans</option>
+            <option value="Soil">Fertile Soil</option>
+            <option value="Bio">Biodiversity</option>
+            <option value="None">None of Above</option>
+            </select>
+          </div>
+        </div>
+         
+        <div class="margin-row">   
+          <div class="labels">
+            <label for="check-imp">Things that should be considered for a better future<br>(Check all tha apply):</label>
+          </div>
+          <div class="field">
+            <label for="rec"><input id="rec" type="checkbox" value="recycling" name="check-imp">Recycling</label> <br>
+            <label for="wat"><input id="wat" type="checkbox" value="water" name="check-imp">Saving Water</label> <br>
+            <label for="plas"><input id="plas" type="checkbox" value="plastic" name="check-imp">Alternatives to plastic</label> <br>
+            <label for="ener"><input id="ener" type="checkbox" value="energy" name="check-imp">Renewable Energy</label> <br>
+           <label for="car"><input id="car" type="checkbox" value="car" name="check-imp">Electric Cars</label> <br>
+          <label for="vegan"><input id="vegan" type="checkbox" value="vegan" name="check-imp">Going Vegan</label> <br>
+          </div>
+        </div>
+        
+         <div class="margin-row">
+           <div class="labels">
+             <label for="comments">Any comments or suggestion?</label>
+           </div>
+           <div class="field">
+             <textarea name="commtext" id="comments" cols="38" rows="6"
+        placeholder="Enter your comment here..."></textarea>
+           </div>
+         </div>
+         
+         <button type="submit" id="submit">Submit</button>
+       </form>
+      </main>
+
+</body>
+</html>
