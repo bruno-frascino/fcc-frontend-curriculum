@@ -1,0 +1,44 @@
+header {
+  border: 3px solid black;
+  height: auto;
+}
+
+.comp-name{
+/*   border: 1px solid red; */
+  background-color: orange;
+  display: inline-block;
+  width: 70%;
+}
+
+img {
+  background-color: magenta;
+  vertical-align: middle;
+}
+
+.brand-title{
+  display: inline-block;
+  font-size: 2em;
+  background-color: cyan;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.feat-link{
+  background-color: lightblue;
+  display: inline-block;
+  width: 10%;
+}
+
+.how-works{
+  background-color: lightgreen;
+  display: inline-block;
+  width: 10%;
+  
+}
+
+.pricing{
+  background-color: lightgray;
+  display: inline-block;
+  width: 9%;
+  
+}
