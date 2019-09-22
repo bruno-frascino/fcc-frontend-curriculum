@@ -1,44 +1,64 @@
-header {
-  border: 3px solid black;
-  height: auto;
+body {
+  --font-color: #bd88c6;
+  --back-color: #fffde9;
+  background-color: var(--back-color, white);
 }
 
-.comp-name{
-/*   border: 1px solid red; */
-  background-color: orange;
-  display: inline-block;
-  width: 70%;
+header {
+  border: 2px solid black;
+  height: auto;
+  color: var(--font-color, darkblue);
 }
 
 img {
-  background-color: magenta;
   vertical-align: middle;
 }
 
 .brand-title{
   display: inline-block;
   font-size: 2em;
-  background-color: cyan;
   vertical-align: middle;
   margin: 0;
+  color: purple;
 }
 
-.feat-link{
-  background-color: lightblue;
+.products{
   display: inline-block;
-  width: 10%;
+  width: 15%;
 }
 
-.how-works{
-  background-color: lightgreen;
+.buy{
   display: inline-block;
-  width: 10%;
+  width: 15%;
   
 }
 
 .pricing{
-  background-color: lightgray;
   display: inline-block;
-  width: 9%;
-  
+  width: 14%;
+}
+
+header > div{
+  text-align: center;
+}
+
+.comp-name{
+/*   border: 1px solid red; */
+  display: inline-block;
+  width: 55%;
+  text-align: left;
+  background: linear-gradient(90deg, pink, #fffde9 );
+}
+
+
+a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--font-color, darkblue);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.6em;
+  text-align: center;
 }
