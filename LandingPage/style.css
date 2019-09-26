@@ -1,5 +1,5 @@
 body {
-  --font-color: #bd88c6;
+  --font-color: purple;
   --back-color: #fffde9;
   background-color: var(--back-color, white);
 }
@@ -22,20 +22,36 @@ img {
   color: purple;
 }
 
+.div-links{
+  display: inline-block;
+  width: 44%;
+  text-align: center;
+}
+
+nav > a {
+  margin-right: 10px;
+}
+
+.nav-links{
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .products{
   display: inline-block;
-  width: 15%;
+  width: 33%;
 }
 
 .buy{
+  width: 33%;
   display: inline-block;
-  width: 15%;
-  
 }
 
 .pricing{
+  width: 32%;
   display: inline-block;
-  width: 14%;
 }
 
 header > div{
@@ -43,7 +59,6 @@ header > div{
 }
 
 .comp-name{
-/*   border: 1px solid red; */
   display: inline-block;
   width: 55%;
   text-align: left;
@@ -51,7 +66,7 @@ header > div{
 }
 
 
-a {
+.nav-link {
   font-size: 1.2em;
   font-weight: bold;
   color: var(--font-color, darkblue);
@@ -61,4 +76,14 @@ a {
 h1 {
   font-size: 1.6em;
   text-align: center;
+}
+
+.fields {
+  text-align: center;
+}
+
+.search-field {
+  width: 240px;
+  border-radius: 3px;
+  height: 2em;
 }
