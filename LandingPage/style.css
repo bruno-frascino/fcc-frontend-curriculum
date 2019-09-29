@@ -29,14 +29,6 @@ img {
   text-align: center;
 }
 
-/* nav {
-  display: flex;
-  background-color: lightblue;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-} */
-
 nav > a {
   margin-right: 10px;
 }
@@ -113,8 +105,16 @@ h1 {
 }
 
 .prod-title{
+  display: inline-block;
+  width: 100%;
   border-radius: 10px;
   height: 50px;
-/*   vertical-align: middle; */
+  line-height: 50px;
   background-color: lightblue;
 }
+
+.prod-title > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
