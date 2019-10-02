@@ -1,14 +1,15 @@
 body {
-  --color-header: purple;
-  --back-color: #fffde9;
-  background-color: var(--back-color, white);
-  color: var(--color-header, darkblue);
+  --primary-color: purple;
+  --sec-color: #fffde9;
+  --th-color: #9ed5ba;
+  background-color: var(--sec-color, white);
+  color: var(--primary-color, darkblue);
 }
 
 header {
   border: 2px solid black;
   height: auto;
-  color: var(--color-header, darkblue);
+  color: var(--primary-color, darkblue);
 }
 
 img {
@@ -60,7 +61,7 @@ header > div{
 .nav-link {
   font-size: 1.2em;
   font-weight: bold;
-  color: var(--color-header, darkblue);
+  color: var(--primary-color, darkblue);
   text-decoration: none;
 }
 
@@ -85,9 +86,10 @@ h1 {
   width: 100px;
   font-size: 1em;
   font-weight: bold;
-  background-color: #75d670d4;
-  border: 1px solid darkgreen;
+  background-color: var(--th-color, #75d670d4);
+  border: 1px solid var(--sec-color, darkgreen);
   border-radius: 8px;
+  color: var(--primary-color, black);
 }
 
 .cards-cont{
@@ -97,11 +99,13 @@ h1 {
 
 .card{
   display: inline-block;
-  width: 20%;
-  height: 350px;
+  width: 22%;
+  min-height: 500px;
   margin: 0px 10px 60px 10px;
   border-radius: 10px;
-  background-color: lightgray;
+  background-color: hsla(344, 67%, 95%, 8);
+  text-align: center;
+  vertical-align: top;
 }
 
 .prod-title{
@@ -110,11 +114,28 @@ h1 {
   border-radius: 10px;
   height: 50px;
   line-height: 50px;
-  background-color: lightblue;
+  background-color: var(--th-color, ligthgray);
+  margin-bottom: 30px;
+  vertical-align: top;
 }
 
 .prod-title > span {
   display: inline-block;
-  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
+.card > img {
+  vertical-align: top;
+  border-radius: 8px;
+  max-width: 100%;
+  min-height: 238px;
+  display: inline-block;
+  height: auto;
+}
+
+.card-price{
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+}
