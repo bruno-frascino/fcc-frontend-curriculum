@@ -7,9 +7,13 @@ body {
 }
 
 header {
-  border: 2px solid black;
+  border: 1px solid black;
   height: auto;
   color: var(--primary-color, darkblue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--sec-color, white);
 }
 
 img {
@@ -66,6 +70,7 @@ header > div{
 }
 
 h1 {
+  padding-top: 100px;
   font-size: 1.6em;
   text-align: center;
 }
@@ -81,7 +86,7 @@ h1 {
   height: 2em;
 }
 
-.sub-button{
+.basic-btn{
   height: 40px;
   width: 100px;
   font-size: 1em;
@@ -138,4 +143,8 @@ h1 {
   display: block;
   font-size: 1.5em;
   font-weight: bold;
+}
+
+.prod-desc{
+  font-size: 1.3em;
 }
