@@ -12,7 +12,8 @@ header {
   color: var(--primary-color, darkblue);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 99%;
+  left: 6px;
   background-color: var(--sec-color, white);
 }
 
@@ -67,6 +68,11 @@ header > div{
   font-weight: bold;
   color: var(--primary-color, darkblue);
   text-decoration: none;
+}
+
+.nav-link:hover{
+  text-decoration: underline;
+  font-size: 1.3em;
 }
 
 #nav-img{
@@ -182,10 +188,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-.img-sec{
-  max-width: 20%;
-}
-
 .img-icon{
   height: 100px;
   border-radius: 30%;
@@ -252,17 +254,40 @@ footer {
 
 @media (max-width:800px){
   .card{
-    width: 80%;
+    width: 70%;
   }
   
   #video{
     width: 60%;
     height: 60%;
   }
+  
+  #header-img {
+    height: 54px;
+    width: 50px;
+  }
+  
+  .comp-name{
+    font-size: 0.9em;
+  }
 }
 
 @media (max-width:700px){
   footer {
     font-size: 0.8em;
+  }
+  
+  #header-img {
+    height: 45px;
+    widht: 40px
+  }
+  
+  .comp-name{
+    font-size: 0.8em;
+  }
+  
+  .nav-img{
+    height: 28px;
+    width: 28px;
   }
 }
