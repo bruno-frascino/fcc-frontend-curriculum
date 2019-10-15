@@ -39,13 +39,6 @@ nav > a {
   margin-right: 10px;
 }
 
-.nav-links{
-  list-style: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .block-link{
   display: inline-block;
   width: 32%;
