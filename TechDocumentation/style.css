@@ -1,0 +1,124 @@
+body {
+  --back-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: var(--back-color, white);
+  min-width: 340px;
+  max-width: 340px;
+  border: 1px solid black;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  left: 350px;
+}
+
+.menu-item {
+  border-top: 1px solid black;
+}
+
+a {
+  text-decoration: none
+}
+
+.menu-item > p{
+  color: black;
+  font-size: 1.2em;
+  margin-left: 15px;
+  vertical-align: middle;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+
+main {
+  vertical-align: top;
+}
+
+.main-section {
+  margin-left: 15px;
+}
+
+section > p {
+  margin-left: 15px;
+  margin-right: 10px;
+  line-height: 1.3em;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.tech-title {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-top: 6px;
+}
+
+ul > li {
+  margin-left: 8px;
+  line-height: 1.4em;
+  margin-top: 3px;
+  margin-bottom: 4px;
+}
+
+.first-lvl-list{
+  list-style-type: upper-roman;
+}
+
+.second-lvl-list{
+  list-style-type: decimal;
+  margin-right: 10px;
+}
+
+.sub-title{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.code-back {
+  width: 80%;
+  background-color: var(--back-color, lightblue);
+  border-radius: 8px;
+}
+
+code {
+  background-color: var(--back-color, lightblue);
+}
+
+@media (max-width: 1020px){
+
+  nav {
+    position: static;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  main {
+    position: static;
+    width: 100%;
+  }
+  
+  .menu-item > p {
+    font-size: 1.1em;  
+    height: 33px;
+    line-height: 33px;
+  }
+}
