@@ -4,12 +4,13 @@ html, body {
   --back-first: #a47a63;
   --front-1-first: #c09ec8;
   --front-2-first: black;
+  --nav-height: 70px;
 }
 
 nav {
   background-color: var(--front-1-first, lightblue);
-  min-height: 75px;
-  line-height: 75px;
+  min-height: var(--nav-height);
+  line-height: var(--nav-height);
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -54,15 +55,13 @@ a > div:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  background-image: linear-gradient(62deg, #9e7664 0%, #5f3d31 100%);
 }
 
 .first-section > h1 {
   font-size: 2.9em;
   font-weight: 900;
   margin: 0;
-  text-shadow: -2px -2px #a7a7a7;
+  text-shadow: 1px 1px lightgray;
 }
 
 .first-section > p {
@@ -70,6 +69,55 @@ a > div:hover{
   color: var(--front-1-first);
   font-size: 1.5em;
   margin-top: 10px;
-  text-shadow: -2px -2px #7d5384;
-  /*   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  text-shadow: 1px 1px purple;
+
 }
+
+.projects-section{
+  background-color: #6c1a2d; 
+  height: 800px;
+
+}
+
+.projects-section > h2 {
+  color: white;
+  font-size: 2.3em;
+  font-weight: 400;
+  padding-top: var(--nav-height);
+  margin: 0 auto 6rem auto;
+  border-bottom: 2px solid white;
+  max-width: 500px;
+  text-align: center; 
+}
+
+.p-container{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.project-tile {
+  background-color: #7c5495; var(--back-first);
+  justify-self: center;
+  align-self: start;
+  border-radius: 8px;
+}
+
+.project-tile > img {
+  width: 400px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.project-tile > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* .project-tile > a > div > p {
+  height: inherit;
+  min-height: inherit;
+}
+ */
