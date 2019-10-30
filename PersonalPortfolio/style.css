@@ -100,24 +100,28 @@ a > div:hover{
 }
 
 .project-tile {
-  background-color: #7c5495; var(--back-first);
+  background-color: #7c5495;
   justify-self: center;
   align-self: start;
   border-radius: 8px;
 }
 
-.project-tile > img {
+.project-tile > a > img {
   width: 400px;
   border-radius: 8px 8px 0px 0px;
 }
 
 .project-tile > a {
   text-decoration: none;
-  color: inherit;
 }
 
-/* .project-tile > a > div > p {
-  height: inherit;
-  min-height: inherit;
+.card-link {
+  line-height: 50px;
+  min-height: 50px;
+  margin:0;
+  color: white;
 }
- */
+
+.card-link:hover {
+  color: black;
+}
