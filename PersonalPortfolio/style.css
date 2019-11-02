@@ -29,8 +29,11 @@ a > div {
   color: var(--front-2-first, lightblue);;
 }
 
-nav > a {
+a {
   text-decoration: none;
+}
+
+nav > a {
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -75,8 +78,7 @@ a > div:hover{
 
 .projects-section{
   background-color: #6c1a2d; 
-  height: 800px;
-
+  padding-bottom: 80px;
 }
 
 .projects-section > h2 {
@@ -92,7 +94,8 @@ a > div:hover{
 
 .p-container{
   display: grid;
-  grid-template-columns: 33% 33% 33%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  justify-items: center;
   color: white;
   font-weight: bold;
   font-size: 1.2em;
@@ -124,4 +127,52 @@ a > div:hover{
 
 .card-link:hover {
   color: black;
+}
+
+@media (max-width: 1260px){
+  
+  .p-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 50px;
+  }
+}
+
+@media (max-width: 890px){
+  
+  .projects-section > h2 {
+    font-size: 2em;
+    max-width: 400px;
+  }
+  
+  .p-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 50px;
+  }
+}
+
+.contacts-section{
+  background-color: #14621a;
+  color: lightgray;
+  text-align: center;
+}
+
+.contacts-section > h2 {
+  font-size: 58px;
+  margin: 0; 
+  padding: 20px 0;
+}
+
+.contacts-section > p {
+  font-family: Lato;
+  font-weight: 400;
+  margin-top: 0;
+  font-size: 1.3em;
+  padding-bottom: 20px;
+}
+
+.contacts-section > a {
+  color: lightgray;
+  font-size: 1.3em;
 }
