@@ -156,6 +156,7 @@ a > div:hover{
   background-color: #14621a;
   color: lightgray;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .contacts-section > h2 {
@@ -174,5 +175,25 @@ a > div:hover{
 
 .contacts-section > a {
   color: lightgray;
-  font-size: 1.3em;
+  font-size: 1.5em;
+  padding-right: 30px;
+}
+
+i {
+  margin-right: 5px;
+}
+
+footer {
+  background-color: #14621a;
+  border-top: 6px solid var(--front-1-first);
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer > p {
+  margin: 0;
+  padding-top: 30px;
+  color: lightgray;
+  text-align: center;
 }
